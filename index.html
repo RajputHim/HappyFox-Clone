@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="section_one">
+        <div id="heading_container">
+          <h1 id="header">Get More Done with a Modern Support Stack</h1>
+          <p id="tagline">
+            Deliver outstanding support and achieve new goals with HappyFox.
+          </p>
+          <div id="input_container_main">
+            <div id="input_container_child">
+              <input
+                type="email"
+                id="email_input"
+                placeholder="Enter your work email"
+              />
+              <button id="submit_email">GET A DEMO</button>
+            </div>
+            <p id="terms">
+              <a href=""></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="section_two">
+        <div id="iframe_container"></div>
+      </div>
+      <div id="section_three">
+        <div id="takeAtour">
+          <img
+            id="award_img"
+            src="./Images/pcmag-new-2021.svg"
+            alt="award_picture"
+          />
+          <h2 id="award_text">Best Help Desk Software for 6 years in a row.</h2>
+          <p id="TakeATour_tagline">
+            All-in-one
+            <a href="" id="helpDesk_link"> help desk ticketing system </a>
+            that provides faster and better support for your customers.
+          </p>
+          <div id="take_a_tour_link_container">
+            <a href="">Take a tour</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="middle_section">
+      <div id="brand_logo_container">
+        <div id="text_container">
+          <p>Trusted by Industry-Leading Companies</p>
+        </div>
+        <div id="Brand_logo_container">
+          <img src="./Images/owler-logo.png" alt="owler_logo" />
+          <img src="./Images/whirlpool.svg" alt="whirlpool_logo" />
+          <img src="./Images/jabra.svg" alt="jabra_logo" />
+          <img src="./Images/leap-frog.svg" alt="leapFrog_logo" />
+          <img src="./Images/harbour.svg" alt="harbourAir_logo" />
+        </div>
+      </div>
+    </div>
+    <div id="customer_support_section">
+      <div id="customer_support">
+        <div>
+          <h3 id="support_heading_one">Provide Exceptional</h3>
+          <h4 id="support_heading_two">Customer Support. Everyday.</h4>
+        </div>
+        <div>
+          <p class="general_description">
+            Meet HappyFox, a practical help desk and customer support software
+            solution. Reduce chaos and bring order to your support process with
+            a robust support ticket system, self-service knowledge base and
+            community forums.
+          </p>
+        </div>
+        <div>
+          <div id="support_slider"></div>
+          <div id="stories_button"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module">
+  import video from "./components/iframe.js";
+  import { termsFunction } from "./components/iframe.js";
+
+  let iframeBox = document.getElementById("iframe_container");
+  let terms_text = document.getElementById("terms");
+  let email_input = document.getElementById("email_input");
+
+  let img = document.createElement("img");
+
+  img.setAttribute("id", "youtube_image");
+  img.src = "./Images/version_2_cover_new.jpg";
+
+  iframeBox.append(img);
+
+  let play_video = () => {
+    document.getElementById("iframe_container").innerHTML = video();
+  };
+
+  let onloadFunction = () => {
+    terms_text.innerHTML = termsFunction();
+  };
+
+  img.addEventListener("click", play_video);
+  email_input.addEventListener("keydown", onloadFunction);
+</script>

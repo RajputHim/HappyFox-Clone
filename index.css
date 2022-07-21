@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+#parent {
+  border: 1px solid red;
+  max-width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#heading_container {
+  width: 60%;
+  margin: auto;
+}
+
+#header {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 52px;
+}
+#tagline {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 17px;
+  color: rgb(85, 85, 85);
+}
+#input_container_main {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+#input_container_child {
+  max-width: 75%;
+  min-width: 100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#email_input {
+  min-width: 100px;
+  border: 2px solid rgb(241, 102, 49);
+  padding: 16px 19px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  line-height: 25px;
+  font-size: 18px;
+  margin-right: -1px;
+  outline: none;
+}
+#submit_email {
+  background-color: rgb(241, 102, 49);
+  border: 2px solid rgb(241, 102, 49);
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+#terms {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 100;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+#terms > a {
+  color: rgb(173, 173, 173);
+  text-decoration: none;
+  cursor: pointer;
+}
+#terms > a:hover {
+  border-bottom: 1px dashed;
+}
+
+#section_two {
+  width: 98%;
+  margin-top: 30px;
+  height: 680px;
+}
+#iframe_container {
+  position: relative;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+#iframe_container > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 20px;
+}
+#youtube_image {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+#section_three {
+  width: 100%;
+  /* height: 800px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#takeAtour {
+  width: 68%;
+  margin: auto;
+}
+#award_img {
+  width: 130px;
+  display: block;
+  margin: auto;
+}
+
+#award_text {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  color: rgb(33, 37, 41);
+}
+
+#TakeATour_tagline {
+  color: rgb(151, 149, 149);
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#take_a_tour_link_container {
+  padding-top: 45px;
+  text-align: center;
+}
+#take_a_tour_link_container > a {
+  text-decoration: none;
+  color: rgb(33, 37, 41);
+  display: inline-block;
+  font-weight: 700;
+  border: 2px solid rgb(42, 42, 42);
+  padding: 9px 19px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#helpDesk_link {
+  max-width: 480px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 24px;
+  color: rgb(99, 99, 99);
+}
+
+#middle_section {
+  background-color: #ebebeb;
+  width: 100%;
+  height: 350px;
+  padding: 70px 0px;
+}
+#brand_logo_container {
+  max-width: 85%;
+  margin: auto;
+  padding: 15px;
+}
+#text_container {
+  padding-bottom: 30px;
+  color: rgb(85, 85, 85);
+  text-align: center;
+}
+#text_container > p {
+  font-weight: 700;
+}
+
+#Brand_logo_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#Brand_logo_container > img {
+  width: 150px;
+}
+
+#customer_support_section {
+  border: 1px solid red;
+}
+#customer_support {
+  width: 85%;
+  border: 1px solid green;
+  margin: auto;
+}
+#customer_support > div:nth-child(2) {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#customer_support > div:nth-child(3) {
+  border: 1px solid red;
+}
+#support_heading_one {
+  font-size: 32px;
+  color: rgb(43, 43, 43);
+  text-align: center;
+  font-weight: normal;
+}
+#support_heading_two {
+  font-size: 32px;
+  color: rgb(54, 54, 54);
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.general_description {
+  color: rgb(85, 85, 85);
+  margin-bottom: 30px;
+}
+
+#support_slider {
+  border: 1px solid yellow;
+  width: 300px;
+  height: 300px;
+}
+#stories_button {
+  border: 1px solid yellow;
+  width: 300px;
+  height: 300px;
+}
