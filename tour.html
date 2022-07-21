@@ -42,7 +42,7 @@
     </div>
     </section>
 
-    <section class="hf-tour__tab-bar">
+    <section class="hf-tour__tab-bar" id = "scrolling">
         <div class="container minimised">
             <div class="hf-tour__tab-wrap">
                 <ul class="hf-tour__tabs">
@@ -74,5 +74,81 @@
             </div>
         </div>
     </section>
+
+    <section class="hf-tour__feature bg-white" id="Omnichannel">
+        <div class="container minimised" id="OmnichannelInner">
+            <div class="hf-tour__feature-wrap right-column bg-bubble-right active">
+                <div class="hf-tour__feature-info">
+                    <h2 class="hf-tour__feature-head">
+                        Single Platform for your <span class="hf-tour__highlighter middler red">Omnichannel</span> Requests
+                    </h2>
+                    <p class="hf-tour__feature-para">
+                        Convert email, phone, chat, social media, and web requests into tickets and keep them organized.
+                    </p>
+                </div>
+                <div class="hf-tour__feature-gfx parallax-ele" data-jsuplxperspective="100">
+                    <img src="//assets.www.happyfox.com/v2/images/helpdesk-tour/omnichannel.svg" alt="omnichannel" style="will-change: transform; transform: translate3d(0px, -50.4581px, 0px);">
+                </div>
+            </div>
+            <div class="hf-tour__card-section">
+                
+                <div class="hf-tour__card active">
+                    <div class="hf-tour__card-icon icon-1-email"></div>
+                    <p class="hf-tour__card-heading">Email</p>
+                    <p class="hf-tour__card-para">Don’t let customer emails slip through! Point your support email address into HappyFox’s support ticket system to have all incoming emails converted to actionable tickets.</p>
+                    <a href="https://www.happyfox.com/email-ticketing/" class="hf-tour__card-link tour-orange">Learn More <div class="icon-arrow-orange"></div></a>
+                </div>
+                
+                <div class="hf-tour__card active">
+                    <div class="hf-tour__card-icon icon-2-voice"></div>
+                    <p class="hf-tour__card-heading">Voice</p>
+                    <p class="hf-tour__card-para">Speak with your customers right from your Help Desk! All calls, transcripts, and recordings will take the form of a newly created ticket within HappyFox.</p>
+                    <a href="https://www.happyfox.com/help-desk-integration/#voice" class="hf-tour__card-link tour-orange">Learn More <div class="icon-arrow-orange"></div></a>
+                </div>
+                
+                <div class="hf-tour__card active">
+                    <div class="hf-tour__card-icon icon-3-socialmedia"></div>
+                    <p class="hf-tour__card-heading">Social Media</p>
+                    <p class="hf-tour__card-para">Want to track, prioritize, and follow-up on social media requests from one place? HappyFox lets you keep an eye on social media mentions and messages from Facebook and Twitter.</p>
+                    <a href="https://www.happyfox.com/social-media-customer-service/" class="hf-tour__card-link tour-orange">Learn More <div class="icon-arrow-orange"></div></a>
+                </div>
+                
+                <div class="hf-tour__card active">
+                    <div class="hf-tour__card-icon icon-4-livechat"></div>
+                    <p class="hf-tour__card-heading">Live Chat</p>
+                    <p class="hf-tour__card-para">Add a chat plugin to your support center or your website by integrating with HappyFox Chat or other supported live chat widgets. Record all customer conversations as Help Desk tickets.</p>
+                    <a href="https://www.happyfox.com/live-chat/" class="hf-tour__card-link tour-orange">Learn More <div class="icon-arrow-orange"></div></a>
+                </div>
+                
+                <div class="hf-tour__card active">
+                    <div class="hf-tour__card-icon icon-5-self-service"></div>
+                    <p class="hf-tour__card-heading">Self Service</p>
+                    <p class="hf-tour__card-para">Help end users resolve issues on their own. Manage knowledge base articles and FAQs in various languages and intelligently deflect ticket creation. Build customizable new ticket forms to gather incoming service requests.</p>
+                    <a href="https://www.happyfox.com/knowledge-base/" class="hf-tour__card-link tour-orange">Learn More <div class="icon-arrow-orange"></div></a>
+                </div>
+                
+                <div class="hf-tour__card active">
+                    <div class="hf-tour__card-icon icon-6-internal-communication"></div>
+                    <p class="hf-tour__card-heading">Internal Communication</p>
+                    <p class="hf-tour__card-para">Using Slack or Microsoft Teams to manage internal support? Enable users to create tickets and receive notifications in business communication platforms through powerful integrations.</p>
+                    <a href="https://www.happyfox.com/help-desk-integration/#communication" class="hf-tour__card-link tour-orange">Learn More <div class="icon-arrow-orange"></div></a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 </body>
 </html>
+
+<script>
+    window.addEventListener("scroll", () => {
+        let navbar = document.getElementById("scrolling");
+
+        if (window.pageYOffset >= 400){
+            navbar.classList.add("sticky");
+        }
+        else {
+            navbar.classList.remove("sticky");
+        }
+    });
+</script>

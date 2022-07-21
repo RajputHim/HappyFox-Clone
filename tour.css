@@ -1,3 +1,8 @@
+.sticky{
+    position: fixed;
+    top: 30;
+    width: 100%;
+}
 .hf-cta {
     margin: 0 0 120px;
     position: relative;
