@@ -242,7 +242,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 #sliding_link_container > div {
   height: 100%;
@@ -267,7 +267,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: relative;
   margin: auto;
 }
 .slider_box > div {
@@ -275,7 +274,8 @@
   margin: auto;
 }
 .slider_box > div > img {
-  width: 100%;
+  width: 80vw;
+  height: 60vh;
 }
 .slider_box > div > h5 {
   font-size: 20px;
