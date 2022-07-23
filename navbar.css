@@ -38,6 +38,7 @@
   height: 9vh;
   justify-content: space-around;
   background-color: #ffffff;
+  visibility: visible;
 }
 #nav2Left {
   display: flex;
@@ -65,25 +66,17 @@
 }
 #test{
   display: flex;
-  width: 62%;
-  justify-content: space-evenly;
-  margin: auto;
+  left: -9%;
+  position: relative;
+  width: 61%;
+  gap: 50px;
 }
-#line{
-    display: flex;
-    gap: 20px;
-    width: 30%;
-    margin-top: -3px;
-    margin-left: 311px;
-}
-#line>div{
-  width: 30%;
-  height: 2px;
-  border: 1px solid orangered;  
-}
-/* .cs1{
+.cs {
   display: flex;
+  width: 33%;
+  gap: 10px;
   cursor: pointer;
-} */
+}
+
 
 

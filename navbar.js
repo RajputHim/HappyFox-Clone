@@ -1,22 +1,15 @@
 let ram1=document.querySelector(".cs1")
-// console.log(ram1)
-// ram1.addEventListener("click",()=>{
-//   console.log("1")
-// })
 document.querySelector(".ram1").style.visibility="hidden";
-document.querySelector("#nav2").style.visibility="hidden"
 let count=0;
 ram1.addEventListener("click",()=>{
  
   count++;
   if(count%2===1){
-    document.querySelector("#nav2").style.visibility="hidden"
     document.querySelector(".ram1").style.visibility="visible";
     document.querySelector(".ram2").style.visibility="hidden";
     document.querySelector(".ram3").style.visibility="hidden";
   }else{
     document.querySelector(".ram1").style.visibility="hidden";
-    document.querySelector("#nav2").style.visibility="visible"
   }
 })
 
@@ -26,13 +19,11 @@ let c2=0;
 ram2.addEventListener("click",()=>{
   c2++;
   if(c2%2===1){
-    document.querySelector("#nav2").style.visibility="hidden"
     document.querySelector(".ram2").style.visibility="visible";
     document.querySelector(".ram1").style.visibility="hidden";
     document.querySelector(".ram3").style.visibility="hidden";
   }else{
     document.querySelector(".ram2").style.visibility="hidden";
-    document.querySelector("#nav2").style.visibility="visible"
   }
 })
 
@@ -43,12 +34,10 @@ ram3.addEventListener("click",()=>{
  
   c3++;
   if(c3%2===1){
-    document.querySelector("#nav2").style.visibility="hidden"
     document.querySelector(".ram3").style.visibility="visible";
     document.querySelector(".ram2").style.visibility="hidden";
     document.querySelector(".ram1").style.visibility="hidden";
   }else{
     document.querySelector(".ram3").style.visibility="hidden";
-    document.querySelector("#nav2").style.visibility="visible"
   }
 })
