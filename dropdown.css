@@ -1,27 +1,63 @@
-#menu{
-    display: flex;
-    border: 1px solid;
-    width: 95%;
-    margin: auto;
-    /* visibility: hidden; */
-    
+#menu {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  /* visibility: hidden; */
 }
-#menu1,#menu2,#menu3,#menu4{
+#menu1,
+#menu2,
+#menu3,
+#menu4 {
+  display: flex;
+  flex-direction: column;
+}
+.small img {
+  width: 13% !important;
+}
+.small h3 {
+}
+#menu span {
+  position: relative;
+  bottom: 17px;
+  left: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: hero-new, sans-serif;
+}
+#menu h4{
+    color: #8d8d8d;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: hero-new, sans-serif;
+    line-height: 17px;
+}
+.menu2,.menu3{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    gap: 10px;
 }
-
-.menu2>div>p+img{
-    width: 13%;
+#menu4>div{
+    position: relative;
+    left: 10%;
+    width: 70%;
+    height: 100%;
+    line-height: 19px;
 }
-.menu3>div>p+img{
-    width: 13%;
-} */
-/* #menu4 img{
-    width: 13%;
+#menu4 img{
+    position: relative;
+    width: 100%;
 }
-
-p+img{
-    width: 13%;
+#menu1>div{
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+.menu2>div,.menu3>div{
+    line-height: 15px;
+    width: 81%;
+    border-radius: 10px;
+}
+.menu2>div:hover,.menu3>div:hover{
+    background-color: beige;
+    cursor: pointer;
 }

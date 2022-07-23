@@ -10,15 +10,17 @@
   <body>
     <div class="dd">
       <h2>Features</h2>
-      <div id="menu">
+      <div id="menu" style="position: absolute;">
         
-        <div id="menu1">
-          <h3>For Support Teams</h3>
-          <p>Boost your support operations and ensure happy customers</p>
-        </div>
-        <div class="menu2">
+        <div id="menu1" style="background-color: whitesmoke;;">
           <div>
-            <h3>Support</h3>
+            <h4 style="font-size: 20px;">For Support Teams</h4>
+            <p style="color: #555555;">Boost your support operations and ensure happy customers</p>
+          </div>
+        </div>
+        <div class="menu2 small">
+          <div>
+            <h4>SUPPORT</h4>
             <p>
               <img
                 src="https://assets.www.happyfox.com/v2/images/site-nav/menu-logo-helpdesk.svg"
@@ -31,12 +33,12 @@
             </p>
           </div>
           <div>
-            <h3>Support</h3>
+            <h4>CHAT SOLUTION</h4>
             <p>
               <img
                 src="https://assets.www.happyfox.com/v2/images/site-nav/menu-logo-livechat.svg"
               />
-              <span>Help Desk</span>
+              <span>Live Chat</span>
             </p>
             <p>
               All-in-one help desk ticketing system to provide better support
@@ -44,12 +46,12 @@
             </p>
           </div>
           <div>
-            <h3>Support</h3>
+            <h4>AI SOLUTION</h4>
             <p>
               <img
                 src="https://assets.www.happyfox.com/v2/images/site-nav/menu-logo-chatbot.svg"
               />
-              <span>Help Desk</span>
+              <span>Chatbot</span>
             </p>
             <p>
               All-in-one help desk ticketing system to provide better support
@@ -57,14 +59,14 @@
             </p>
           </div>
         </div>
-        <div class="menu3">
+        <div class="menu3 small">
           <div>
-            <h3>Support</h3>
+            <h4>AUTOMATION TECHNOLOGY</h4>
             <p>
               <img
                 src="https://assets.www.happyfox.com/v2/images/site-nav/menu-logo-workflows.svg"
               />
-              <span>Help Desk</span>
+              <span>Workflows</span>
             </p>
             <p>
               All-in-one help desk ticketing system to provide better support
@@ -72,12 +74,12 @@
             </p>
           </div>
           <div>
-            <h3>Support</h3>
+            <h4>REPORTING & ANALYTICS </h4>
             <p>
               <img
                 src="https://assets.www.happyfox.com/v2/images/site-nav/menu-logo-bi.svg"
               />
-              <span>Help Desk</span>
+              <span>Business Intelligence</span>
             </p>
             <p>
               All-in-one help desk ticketing system to provide better support
@@ -85,12 +87,12 @@
             </p>
           </div>
           <div>
-            <h3>Support</h3>
+            <h4>MOBILE SOLUTION</h4>
             <p>
               <img
                 src="https://assets.www.happyfox.com/v2/images/site-nav/menu-logo-inapp-chat.svg"
               />
-              <span>Help Desk</span>
+              <span>In-App Chat</span>
             </p>
             <p>
               All-in-one help desk ticketing system to provide better support
@@ -100,7 +102,7 @@
         </div>
         <div id="menu4">
           <div>
-            <h3>Customer Story</h3>
+            <h4>CUSTOMER STORY</h4>
             <div>
               <img
                 src="https://assets.www.happyfox.com/v2/images/site-nav/menu-show-item-3.jpg"
@@ -117,19 +119,19 @@
 </html>
 <script>
   let ram=document.querySelector("h2")
-  // document.getElementById("menu").style.visibility="hidden";
-  // let count=0;
-  // ram.addEventListener("click",()=>{
+  document.getElementById("menu").style.visibility="hidden";
+  let count=0;
+  ram.addEventListener("click",()=>{
    
-  //   count++;
-  //   console.log(count)
-  //   if(count%2===1){
+    count++;
+    console.log(count)
+    if(count%2===1){
 
-  //     document.getElementById("menu").style.visibility="visible";
-  //   }else{
-  //     document.getElementById("menu").style.visibility="hidden";
-  //   }
-  // })
-
+      document.getElementById("menu").style.visibility="visible";
+    }else{
+      document.getElementById("menu").style.visibility="hidden";
+    }
+  })
+  
 
 </script>
