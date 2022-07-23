@@ -218,12 +218,12 @@ button {
 }
 
 /* first image slider css */
-.container-1 {
+.container-1,.container-2,.container-3 {
   width: 750px;
   height: 500px;
 }
 
-.slider-container-1 {
+.slider-container-1,.slider-container-2 ,.slider-container-3 {
   width: 750px;
   height: 500px;
   margin: auto;
@@ -242,7 +242,7 @@ button {
   display: flex;
   margin-top: 520px;
 }
-.line1 {
+.line1,.line2,.line3 {
   cursor: pointer;
 
   transition: background-color 0.3s ease;
@@ -256,19 +256,7 @@ button {
   background-color: black;
 }
 /* second image slide */
-.container-2 {
-  width: 750px;
-  height: 500px;
-}
-.slider-container-2 {
-  width: 750px;
-  height: 500px;
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .slider2 img {
   width: 750px;
   height: 500px;
@@ -279,15 +267,7 @@ button {
   display: flex;
   margin-top: 520px;
 }
-.line2 {
-  cursor: pointer;
 
-  transition: background-color 0.3s ease;
-  padding: 4px;
-  margin: 0 3px;
-  border: 3px solid black;
-  border-radius: 50%;
-}
 .line2:hover,
 .active {
   background-color: black;
@@ -295,19 +275,7 @@ button {
 
 /* third images slide */
 
-.container-3 {
-  width: 750px;
-  height: 500px;
-}
-.slider-container-3 {
-  width: 750px;
-  height: 500px;
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .slider3 img {
   width: 750px;
   height: 500px;
@@ -318,15 +286,7 @@ button {
   display: flex;
   margin-top: 520px;
 }
-.line3 {
-  cursor: pointer;
 
-  transition: background-color 0.3s ease;
-  padding: 4px;
-  margin: 0 3px;
-  border: 3px solid black;
-  border-radius: 50%;
-}
 .line3:hover,
 .active {
   background-color: black;
