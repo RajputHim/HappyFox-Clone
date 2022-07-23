@@ -1,0 +1,95 @@
+.m {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  height: 600px;
+  background-color: aliceblue;
+  visibility: hidden;
+}
+.m1 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.im1 {
+  display: flex;
+}
+.fa-solid {
+  margin: 20px;
+}
+#ramu {
+  width: 80%;
+  display: flex;
+  gap: 20%;
+}
+.m21 {
+  display: flex;
+  flex-direction: column;
+}
+#m12 {
+  width: 57%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.im1 > h5 {
+    position: relative;
+    font-size: 16px;
+    margin-bottom: -12px;
+    left: -27%;
+    font-weight: 300;
+    color: #004b91;
+    font-family: hero-new, sans-serif;
+}
+.im{
+    cursor: pointer;
+}
+.im:hover{
+    background-color: bisque;
+    border-radius: 14px;
+}
+.m1 > h4 {
+  position: relative;
+  left: 21%;
+  color: #212529;
+  font-weight: 300;
+  font-family: hero-new, sans-serif;
+}
+.a {
+  color: #212529;
+  font-weight: 300;
+  font-family: hero-new, sans-serif;
+}
+.mt {
+  width: 19px;
+}
+#icons {
+  position: relative;
+  top: 4%;
+  height: 64%;
+}
+#icons > div {
+  display: flex;
+  gap: 14px;
+}
+#icons > div:hover{
+    background-color: cornsilk;
+}
+#btn1{
+    position: relative;
+    top: 10%;
+    left: 5%;
+    font-size: 15px;
+    border-radius: 15px;
+    border: none;
+}
+#btn2{
+    position: relative;
+    top: 5%;
+    left: 20%;
+    font-size: 16px;
+    border-radius: 14px;
+    border: none;
+}
+#btn1:hover,#btn2:hover{
+    background-color: cadetblue;
+}
