@@ -81,11 +81,13 @@
   background-color: #ff9e77;
 }
 
-#favourite_apps_container {
+#favourite_apps_container,
+#company_review_section {
   margin-top: 50px;
   padding: 20px;
 }
-#favourite_apps_grid {
+#favourite_apps_grid,
+#company_review_heading {
   width: 85%;
   margin: auto;
   text-align: center;
@@ -110,14 +112,46 @@
 .apps_list:hover {
   box-shadow: none;
 }
-#favourite_apps_grid > h3 {
+#favourite_apps_grid > h3,
+#company_review_heading > h3 {
   font-size: 34px;
   margin-bottom: 30px;
   color: #323643;
 }
-#favourite_apps_grid > h4 {
+#favourite_apps_grid > h4,
+#company_review_heading > h4 {
   color: #323643;
   font-size: 35px;
   margin-bottom: 70px;
   font-weight: 700;
+}
+#company_review_list {
+  width: 85%;
+  margin: auto;
+}
+#review_container {
+  width: 85%;
+  height: 50vh;
+  position: relative;
+  margin: auto;
+}
+.review {
+  display: none;
+}
+.name_logo_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.name > p:first-child {
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+}
+.name > p:last-child {
+  color: #6d717e;
+}
+.logo>img{
+  width: 270px;
+  height: 120px;
 }
