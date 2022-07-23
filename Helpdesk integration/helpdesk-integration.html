@@ -9,7 +9,7 @@
       HappyFox Help Desk Native Integrations | Ticketing System Integrations
     </title>
   </head>
-  <body>
+  <body onload="onload_data()">
     <div id="top_section"></div>
     <!-- featured apps -->
     <div id="featured_app_section">
@@ -74,61 +74,246 @@
       <div id="display_filter_container">
         <ul class="filter_list">
           <h4>FILTER BY:</h4>
-          <li>All Integrations</li>
-          <li>Accounting</li>
-          <li>Analytics</li>
-          <li>Automation</li>
-          <li>Business Intelligence</li>
-          <li>Chatbot</li>
-          <li>Communication</li>
-          <li>Contact Management</li>
-          <li>CRM</li>
-          <li>E-Commerce</li>
-          <li>Incident Management</li>
-          <li>Live Chat</li>
-          <li>Marketing</li>
-          <li>Messaging</li>
-          <li>Payment</li>
-          <li>Project Management</li>
-          <li>Remote Support</li>
-          <li>Single Sign-on</li>
-          <li>Social</li>
-          <li>Survey</li>
-          <li>Voice</li>
+          <li onclick="filterList('All')">All Integrations</li>
+          <li onclick="filterList('Automation')">Automation</li>
+          <li onclick="filterList('Business Intelligence')">
+            Business Intelligence
+          </li>
+          <li onclick="filterList('Communication')">Communication</li>
+          <li onclick="filterList('CRM')">CRM</li>
+          <li onclick="filterList('E-Commerce')">E-Commerce</li>
+          <li onclick="filterList('Live Chat')">Live Chat</li>
+          <li onclick="filterList('Payment')">Payment</li>
+          <li onclick="filterList('Project Management')">Project Management</li>
+          <li onclick="filterList('Single Sign-on')">Single Sign-on</li>
         </ul>
-        <div id="filter_card_container">
-            <div class="filter_card">
-                <div class="logo">
-                    <img src="../Images/hfc.svg" alt="happyfox chat">
-                </div>
-                <p class="text">Add live chat to your website</p>
-            </div>
-            <div class="filter_card">
-                <div class="logo">
-                    <img src="../Images/hfc.svg" alt="happyfox chat">
-                </div>
-                <p class="text">Add live chat to your website</p>
-            </div>
-            <div class="filter_card">
-                <div class="logo">
-                    <img src="../Images/hfc.svg" alt="happyfox chat">
-                </div>
-                <p class="text">Add live chat to your website</p>
-            </div>
-            <div class="filter_card">
-                <div class="logo">
-                    <img src="../Images/hfc.svg" alt="happyfox chat">
-                </div>
-                <p class="text">Add live chat to your website</p>
-            </div>
-            <div class="filter_card">
-                <div class="logo">
-                    <img src="../Images/hfc.svg" alt="happyfox chat">
-                </div>
-                <p class="text">Add live chat to your website</p>
-            </div>
+        <div id="filter_card_container_parent">
+          <div id="filter_card_container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom section -->
+    <div id="bottom_section">
+      <div>
+        <div class="box">
+          <p>CAN’T FIND YOUR APP?</p>
+          <p>Request App Integration</p>
+          <a href="">Contact us</a>
+        </div>
+      </div>
+      <div>
+        <div class="box">
+          <p>HAVE A FEW MINUTES?</p>
+          <p>Interested in Trying HappyFox?</p>
+          <a href="">Get A Demo</a>
         </div>
       </div>
     </div>
   </body>
 </html>
+<script>
+  let appDirectory = [
+    {
+      img_link: "../Images/hfc.svg",
+      title: "Add live chat to your website",
+      category: "Live Chat",
+      name: "happyfox",
+    },
+    {
+      img_link: "../Images/hf-chatbot-int.svg",
+      title: "Deflect tickets and reduce support volume",
+      category: "Automation",
+      name: "happyfox",
+    },
+    {
+      img_link: "../Images/hf-workflows-int.svg",
+      title: "Automate your Helpdesk business processes",
+      category: "Automation",
+      name: "happyfox",
+    },
+    {
+      img_link: "../Images/../Images/hf-bi-int.svg",
+      title: "Visually analyze your Helpdesk data",
+      category: "Business Intelligence",
+      name: "happyfox",
+    },
+    {
+      img_link: "../Images/slack-logo-min.png",
+      title: "Get instant ticket notifications",
+      category: "Communication",
+      name: "slack",
+    },
+    {
+      img_link: "../Images/ms_teams_full.png",
+      title: "Respond and update your tickets directly within Microsoft Teams.",
+      category: "Communication",
+      name: "microsoft",
+    },
+    {
+      img_link: "../Images/salesforce-icon.svg",
+      title: "View details from Salesforce objects in your Help Desk",
+      category: "CRM",
+      name: "salesforce",
+    },
+    {
+      img_link: "../Images/jira.svg",
+      title: "Issue tracking on your help desk",
+      category: "Project Management",
+      name: "jira",
+    },
+    {
+      img_link: "../Images/msdynamics.svg",
+      title: "Sync customer details and support tickets",
+      category: "CRM",
+      name: "microsoft",
+    },
+    {
+      img_link: "../Images/azure.svg",
+      title: "One credetntail to access all your applications.",
+      category: "Single Sign-on",
+      name: "azure",
+    },
+    {
+      img_link: "../Images/okta.svg",
+      title: "Okta SSO on your help desk",
+      category: "Single Sign-on",
+      name: "okta",
+    },
+    {
+      img_link: "../Images/azure-logo.png",
+      title: "Link HappyFox tickets to work items in Azure Boards.",
+      category: "Project Management",
+      name: "azure",
+    },
+    {
+      img_link: "../Images/zapier.svg",
+      title: "Create Zapier triggers to automate help desk tasks",
+      category: "CRM",
+      name: "zapier",
+    },
+    {
+      img_link: "../Images/pipedrive.svg",
+      title: "Auto sync customer data from Pipedrive CRM",
+      category: "CRM",
+      name: "pipedrive",
+    },
+    {
+      img_link: "../Images/sugarcrm.svg",
+      title: "View customer details from CRM in your help desk",
+      category: "CRM",
+      name: "sugarcrm",
+    },
+    {
+      img_link: "../Images/highrise.svg",
+      title: "Higher CRM Customer profiles on your help desk",
+      category: "CRM",
+      name: "highrise",
+    },
+    {
+      img_link: "../Images/magento.svg",
+      title: "Magento eCommerce information on your help desk",
+      category: "E-Commerce",
+      name: "magento",
+    },
+    {
+      img_link: "../Images/shopify.svg",
+      title: "Shopify eCommerce integration for HappyFox",
+      category: "E-Commerce",
+      name: "shopify",
+    },
+    {
+      img_link: "../Images/bigcommerce.svg",
+      title: "Bigcommerce on your HappyFox help desk",
+      category: "E-Commerce",
+      name: "bigcommerce",
+    },
+    {
+      img_link: "../Images/baremetrics.svg",
+      title: "Access revenue analytics within HappyFox",
+      category: "Payment",
+      name: "baremetrics",
+    },
+    {
+      img_link: "../Images/chargify.svg",
+      title: "Better billing support with Chargify",
+      category: "Payment",
+      name: "chargify",
+    },
+    {
+      img_link: "../Images/chartmogul.svg",
+      title: "View billing details in HappyFox",
+      category: "Payment",
+      name: "chartmogul",
+    },
+    {
+      img_link: "../Images/stripe.svg",
+      title: "Access contextual billing information",
+      category: "Payment",
+      name: "stripe",
+    },
+    {
+      img_link: "../Images/github.svg",
+      title: "Track and create issues within your helpdesk",
+      category: "Project Management",
+      name: "github",
+    },
+  ];
+  let Search_query = document.getElementById("directory_search");
+
+  let display = (data) => {
+    let filter_box = document.getElementById("filter_card_container");
+    filter_box.innerHTML = null;
+    data.forEach((el) => {
+      let card = document.createElement("div");
+      card.className = "filter_card";
+      let logo_container = document.createElement("div");
+      logo_container.className = "logo";
+
+      let image_container = document.createElement("img");
+      image_container.src = el.img_link;
+
+      let title = document.createElement("p");
+      title.innerText = el.title;
+      title.className = "text";
+
+      logo_container.append(image_container);
+      card.append(logo_container, title);
+      filter_box.append(card);
+    });
+  };
+
+  let onload_data = () => {
+    display(appDirectory);
+  };
+
+  let filterList = (query) => {
+    let allList = document.querySelectorAll("li");
+    for (let i = 0; i < allList.length; i++) {
+      allList[i].style.border = "1px solid transparent";
+    }
+    let list = event.composedPath()[0];
+    list.style.borderLeft = "2px solid rgb(241, 102, 49)";
+
+    if (query == "All") {
+      display(appDirectory);
+    } else {
+      let filtered = appDirectory.filter((el) => {
+        return el.category == query;
+      });
+      display(filtered);
+    }
+  };
+
+  let search = (e) => {
+    if (e.key === "Enter") {
+      let query = Search_query.value;
+      let foundData = appDirectory.filter((el) => {
+        return el.name == query;
+      });
+      display(foundData);
+    }
+  };
+
+  Search_query.addEventListener("keydown", search);
+</script>
