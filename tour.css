@@ -2,6 +2,7 @@
     position: fixed;
     top: 30;
     width: 100%;
+    z-index: 10000;
 }
 .hf-cta {
     margin: 0 0 120px;
