@@ -339,7 +339,9 @@
         </div>
         <div id="sectionThree_customer_support">
           <div id="stories_button">
-            <button>View all customer stories</button>
+            <button onclick="goToIntegration()">
+              View all customer stories
+            </button>
             <button>Get a Demo</button>
           </div>
         </div>
@@ -487,4 +489,8 @@
     total_slides[val2 - 1].style.display = "block";
     setTimeout(reviewShow, 4000);
   }
+  // link to integration page
+  let goToIntegration = () => {
+    window.location.href = "./Helpdesk integration/helpdesk-integration.html";
+  };
 </script>
