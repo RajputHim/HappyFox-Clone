@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding-top: 30px;
+  width: 100%;
+  margin-top: 50px;
+  background-color: #121213;
+  /* border: 2px solid yellow; */
+}
+.row {
+  width: 1040px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  /* border: 1px solid yellow; */
+}
+.footer-col > ul {
+  list-style: none;
+  line-height: 30px;
+  color: rgb(165, 164, 164);
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  /* border: 1px solid red; */
+}
+.footer-col > ul > li:hover {
+  color: rgb(228, 226, 226);
+  cursor: pointer;
+}
+/* .footer-col > ul > .header:hover {
+  color: white;
+  cursor: default;
+} */
+.header {
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  /* margin-top: 10px; */
+}
+#contact-option {
+  width: 80%;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  margin-left: 120px;
+  margin-top: 30px;
+  border-top: 1px solid rgba(128, 128, 128, 0.534);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.534);
+  padding: 14px;
+  /* border: 1px solid orange; */
+  cursor: pointer;
+}
+#contact-option > div {
+  display: flex;
+  gap: 6px;
+}
+#last {
+  display: flex;
+  justify-content: space-around;
+  color: rgb(165, 164, 164);
+  margin-top: 50px;
+}
+#last > div:first-child {
+  width: 390px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+#last > div:first-child div:hover {
+  color: white;
+  cursor: pointer;
+}
+#last > div:nth-child(2) {
+  width: 100px;
+  gap: 16px;
+  display: flex;
+  margin-left: -40px;
+}
+#last > div:last-child {
+  margin-top: -11px;
+}
+#select {
+  background-color: #121213;
+  color: rgb(165, 164, 164);
+  border: none;
+  cursor: pointer;
+}
+#social_media:hover {
+  cursor: pointer;
+}
+#for_helpdesk {
+  text-decoration: none;
+  color: white;
+}

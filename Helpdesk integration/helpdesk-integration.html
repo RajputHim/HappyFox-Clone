@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/helpdes-integration.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
     <title>
       HappyFox Help Desk Native Integrations | Ticketing System Integrations
     </title>
@@ -110,8 +111,14 @@
         </div>
       </div>
     </div>
+    <footer id="foot_of_page"></footer>
   </body>
 </html>
+<script type="module">
+  import footerSection from "../components/footer.js"
+  // document.querySelector("footer").innerHTML = footerSection();
+  document.getElementById("foot_of_page").innerHTML = footerSection();
+</script>
 <script>
   let appDirectory = [
     {
