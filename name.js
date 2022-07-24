@@ -3,6 +3,7 @@ let data = JSON.parse(localStorage.getItem("signin"))||[]
 console.log(data[0]);
 
 document.getElementById("login").innerText=`Hi ${data[0].name}`
+document.getElementById("login").style.fontWeight="bold"
 document.getElementById("login").addEventListener("click",()=>{
     document.getElementById("login").innerText="Sign in"
     alert("For SignOut click Ok")
