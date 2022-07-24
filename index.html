@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/index-2.css" />
+    <link rel="stylesheet" href="styles/footer.css">
     <title>Help Desk Software | Customer Support Software</title>
   </head>
   <body>
@@ -339,9 +340,7 @@
         </div>
         <div id="sectionThree_customer_support">
           <div id="stories_button">
-            <button onclick="goToIntegration()">
-              View all customer stories
-            </button>
+            <button onclick="goToIntegration()">View all integrations</button>
             <button>Get a Demo</button>
           </div>
         </div>
@@ -424,6 +423,7 @@
         </div>
       </div>
     </div>
+    <footer id="foot_of_page"></footer>
   </body>
 </html>
 <script type="module">
@@ -493,4 +493,10 @@
   let goToIntegration = () => {
     window.location.href = "./Helpdesk integration/helpdesk-integration.html";
   };
+</script>
+
+<script type="module">
+  import footerSection from "./components/footer.js";
+  // document.querySelector("footer").innerHTML = footerSection();
+  document.getElementById("foot_of_page").innerHTML= footerSection();
 </script>
