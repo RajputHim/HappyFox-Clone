@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo page</title>
+    <link rel="stylesheet" href="demo.css" />
+    <style type="text/css">
+      footer {
+        padding: 0;
+        height: auto;
+        width:98.7vw;
+        margin: auto;
+        background-color: rgb(26, 26, 26);
+        color: white;
+      }
+      footer hr {
+        color: white;
+      }
+      .footer {
+        list-style-type: none;
+        background-color: rgb(22, 22, 22);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      li {
+        margin: 2%;
+      }
+      .footer img {
+        padding-top: 1%;
+      }
+      @media (max-width: 900px) {
+        .footer {
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div class="container"> -->
+      <div class="left_box1">
+        <div>
+          <img
+            id="img"
+            src="https://hfweb-assets.s3.amazonaws.com/v2/images/logos/hf-topbar-logo.svg"/>
+        </div>
+        <div id="h3">
+          <h3>Get a 30 minute Help Desk Demo<br />with our Product Experts</h3>
+        </div>
+        <div>
+          <ul>
+            <li class="tick">
+              <div>
+                <p>Handle all incoming request in one ticketing system</p>
+              </div>
+            </li>
+            <li class="tick">
+              <div>
+                <p>Build on online knowledge base and promote self-service</p>
+              </div>
+            </li>
+            <li class="tick">
+              <div>
+                <p>Automative repetativ task and serve your customers fast</p>
+              </div>
+            </li>
+            <li class="tick">
+              <div>
+                <p>Analyze help desk metrics and take smart decisions</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="box_3">
+          <img
+            id="img2"
+            src="https://hfweb-assets.s3.amazonaws.com/img/pcmag-image.svg"  alt="img"
+            align="left"/>
+
+          <div>
+            <h4 id="h4">
+              Awarded the Best Helpdesk <br />
+              Software for 5 years in a row
+            </h4>
+          </div>
+          <div class="box_4">
+            <img
+              id="img3"
+              src="https://hfweb-assets.s3.amazonaws.com/img/star-list.svg"
+              />
+            
+          </div>
+        </div>
+        <div class="box_3">
+          <img
+            id="img2"
+            src="https://hfweb-assets.s3.amazonaws.com/img/g2crowd-image.svg"
+            alt="img"
+            align="left"/>
+          
+          <div>
+            <h4 id="h4">
+              "A solid and flexible solution for<br/>
+              our growing company"
+            </h4>
+          </div>
+          <div class="box_4">
+            <img
+              id="img3"
+              src="https://hfweb-assets.s3.amazonaws.com/img/star-list.svg"/>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="right_box2">
+        <div id="h2">
+          <h2>See HappyFox in Action</h2>
+        </div>
+        <form >
+          <input type="text" class="input" id="name" placeholder=" Your Name" />
+
+          <input type="text" class="input" id="email" placeholder="Work Mail" />
+
+          <input type="number" class="input" id="phone" placeholder="Phone" />
+
+          <input type="Company Name" class="input" id="company" placeholder="Company Name" />
+
+          <!-- <select id="company size" placeholder="Company Size" class="input"  name="Company Size"><br><br> -->
+          <select
+            name="company size"
+            id="CompanySize"
+            class="input"
+            placeholder="Company Size"
+          >
+            <option value="company size">Company Size</option>
+            <option value="1-10">1-10</option>
+            <option value="11-50">11-50</option>
+            <option value="51-200">51-200</option>
+            <option value="201-500">201-500</option>
+            <option value="501-1000">501-1000</option>
+            <option value="1001-5000">501-5000</option>
+            <option value="5001-10000">5001-10000</option>
+            <option value="10000+">10000+</option>
+          </select>
+
+
+          <select
+            name="Industry"
+            id="Industry"
+            class="input"
+            placeholder="Industry"
+          >
+            <option value="Industry">Industry</option>
+            <option value="Communication">Communication</option>
+            <option value="Consulting">Consulting</option>
+            <option value="Constration">Constration</option>
+            <option value="Creative Agency(Web, Advertise, Video)">
+              Creative Agency(Web, Advertise, Video)
+            </option>
+            <option value="Ecommerce">Ecommerce</option>
+            <option value="Education & Training">Education & Training</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Enviormental">nviormental</option>
+            <option value="Financial or Credit Service">
+              Financial or Credit Service
+            </option>
+            <option value="Food & Beverage">Food & Beverage</option>
+            <option value="Goverment">Goverment</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Hospitality">Hospitality</option>
+            <option value="Insurance">Insurance</option>
+            <option value="IT Service">IT Service</option>
+            <option value="Machinery">Machinery</option>
+            <option value="Manufecturing">Manufecturing</option>
+            <option value="News, Media & Publication">
+              News, Media & Publication
+            </option>
+            <option value="Non Profit Organization">
+              Non Profit Organization
+            </option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Recreation">Recreation</option>
+            <option value="Retail">Retail</option>
+            <option value="Shipping">Shipping</option>
+            <option value="Software & App devlopment">
+              Software & App devlopment
+            </option>
+            <option value="Technology">Technology</option>
+            <option value="Telecommunication">Telecommunication</option>
+            <option value="Transportation">Transportation</option>
+            <option value="utilites">utilites</option>
+            <option value="Wholesale">Wholesale</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label for="Agent Count"></label>
+          <select
+            name="Agent Count"
+            id="AgentCount"
+            class="input"
+            placeholder="Agent Count"
+          >
+            <option value="Agent Count">Agent Count</option>
+            <option value="5 Agent">5 Agent</option>
+            <option value="6-10 Agent">6-10 Agent</option>
+            <option value="11-20 Agent">11-20 Agent</option>
+            <option value="21-50 Agent">21-50 Agent</option>
+            <option value="51-100 Agent">51-100 Agent</option>
+            <option value="100 + Agent">100 + Agent</option>
+          </select>
+
+          <label for="Your Territory"></label>
+          <select
+            name="Your Territory"
+            id="YourTerritory"
+            class="input"
+            placeholder="Your Territory"
+          >
+            <option value="Your Territory">Your Territory</option>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="USA/Canada">USA/Canada</option>
+            <option value="Europe,Middle East & Africa">
+              Europe,Middle East & Africa
+            </option>
+            <option value="Latin America">Latin America</option>
+            <option value="Asia Pacific">Asia Pacific</option>
+          </select>
+        </form>
+        <div >
+          <button class="demo-btn" onclick="submit()">GET A DEMO NOW</button>
+        </div>
+        <div class="condition">
+          <span>By submiting this form you agree to our Privacy Policy</span>
+        </div>
+      </div>
+    </div>
+  
+    <footer>
+      <hr />
+      <div>
+        <ul class="footer">
+          <li>
+            <a>
+              <img
+                src="https://hfweb-assets.s3.amazonaws.com/v2/images/bottom-footer/helpdesk-footer.svg"
+                alt=""
+              /><span> Help Desk</span></a
+            >
+          </li>
+          <li>
+            <a
+              ><img
+                src="https://hfweb-assets.s3.amazonaws.com/v2/images/bottom-footer/hf-assist-ai-footer.svg"
+                alt=""
+              /><span> Assist AI</span></a
+            >
+          </li>
+          <li>
+            <a
+              ><img
+                src="https://hfweb-assets.s3.amazonaws.com/v2/images/bottom-footer/livechat-footer.svg"
+                alt=""
+              /><span> Live Chat</span></a
+            >
+          </li>
+          <li>
+            <a
+              ><img
+                src="https://hfweb-assets.s3.amazonaws.com/v2/images/bottom-footer/chatbot-footer.svg"
+                alt=""
+              /><span> Chatbot</span></a
+            >
+          </li>
+          <li>
+            <a
+              ><img
+                src="https://hfweb-assets.s3.amazonaws.com/v2/images/bottom-footer/bi-footer.svg"
+                alt=""
+              /><span> Business Intelligence</span></a
+            >
+          </li>
+          <li>
+            <a
+              ><img
+                src="https://hfweb-assets.s3.amazonaws.com/v2/images/bottom-footer/workflows-footer.svg"
+                alt=""
+              /><span> Workflows</span></a
+            >
+          </li>
+          <li>
+            <a
+              ><img
+                src="https://hfweb-assets.s3.amazonaws.com/v2/images/bottom-footer/inapp-chat-footer.svg"
+                alt=""
+              /><span>In-App Chat</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <hr />
+    </footer>
+  </body>
+</html>
+<script src="demo.js"></script>

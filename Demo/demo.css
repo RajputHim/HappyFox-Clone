@@ -1,0 +1,263 @@
+/* Uses for font style of all */
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body background color */
+body {
+  background-color: #1e212c;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  margin: auto;
+}
+
+@media (max-width: 1100px) {
+  body {
+    grid-template-columns: 80%;
+    gap: 50px;
+    margin-top: 20px;
+  }
+}
+
+/* Uses this class for left side div */
+.left_box1 {
+  width: 90%;
+  height: 650px;
+  background-color: #1e212c;
+  margin: 60px;
+  border-radius: 10px;
+  border: 1px solid #1e212c;
+  margin-top: 80px;
+}
+
+/* Uses this class for Right side div */
+.right_box2 {
+  width: 90%;
+  height: 700px;
+  border: 1px solid black;
+  background-color: white;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+/* Uses for right side div inside Heading */
+#h2 {
+  text-align: center;
+  font-size: 18px;
+  margin: 45px 20px;
+  color: #282529;
+}
+
+/* Form lable layout coloumn wise in right side div and also uses for responsive screen */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: ; */
+}
+
+/* Uses input class inside the form of all input in right side div*/
+.input {
+  width: 85%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 0.5px solid rgb(150, 149, 149);
+  margin-bottom: 16px;
+  margin-top: -5px;
+  padding-left: 10px;
+}
+.demo-btn{
+  background-color: red;
+  font-size: 23px;
+  text-align: center;
+  align-self: center;
+  margin-left: 80px;
+  width: 450px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  height: 40px;
+}
+
+
+.input:focus {
+  outline: none;
+}
+
+/* Every lable between space */
+.input:nth-child(1) {
+  margin-top: -15px;
+}
+
+/* This class uses for Get a demo button in right side div and below the input lable */
+.red_box {
+  width: 85%;
+  height: 50px;
+  background-color: #ce2525;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  padding-top: 2px;
+  margin: 20px auto;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* It is uses for red demo box inside heading */
+.red_box h5 {
+  color: white;
+  font-size: 16px;
+  margin: auto;
+  margin: 14px 0;
+}
+
+/* Performing for color effect so using Hover */
+.red_box:hover {
+  background-color: red;
+}
+
+/* Uses for mouse type change when mouse move on demo box */
+.condition {
+  color: #adadad;
+  font-size: 13px;
+  font-weight: 300;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Uses for mouse type change when mouse move on para */
+.condition > span:hover {
+  border-bottom: 1px dotted #333;
+}
+
+/* This id uses only Happyfox image */
+#img {
+  width: 35%;
+  height: 70px;
+  margin: auto;
+}
+
+/* this id use only heading */
+#h3 {
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  margin: auto;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+.tick {
+  list-style: none;
+}
+/* That is tick class and it is uses for green tick show befor list item */
+.tick > div {
+  background-image: url(https://hfweb-assets.s3.amazonaws.com/img/check-list-icon.svg);
+  background-position-x: left;
+  background-position-y: center;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+
+/* Uses for list item para */
+.tick p {
+  color: white;
+  font-size: 16px;
+  margin-left: 4%;
+  margin-top: 10px;
+}
+
+/* uses of inside left side div and take a another box */
+.box_3 {
+  width: 400px;
+  height: 120px;
+  border: 1px solid #191b23;
+  background-color: #191b23;
+  margin-left: 30px;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
+/* uses for image keep on box_3 */
+#img2 {
+  width: 20%;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* uses only heading */
+#h4 {
+  font-size: 18px;
+  color: white;
+  margin-left: 100px;
+  padding-left: 25px;
+  padding-top: 5%;
+}
+/* uses of inside left side div and take a another box */
+.box_4 {
+  width: 100px;
+  height: 15px;
+  margin-left: 120px;
+  margin-top: 1%;
+}
+
+/* for the footer */
+
+footer {
+  padding: 1%;
+  height: auto;
+  width: 1500px;
+  margin: auto;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+footer hr {
+  border: 0.1px solid rgb(105, 105, 105);
+  color: rgb(105, 105, 105);
+}
+.footer {
+  list-style-type: none;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+li {
+  margin: 2%;
+}
+.footer img {
+  padding-top: 1%;
+}
+.for_footer {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 900px) {
+  .left_box1 {
+    width: 80%;
+    margin: auto;
+    margin-left: 15%;
+  }
+  .right_box2 {
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    margin-left: 10%;
+  }
+}

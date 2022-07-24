@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/helpdes-integration.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <title>
+      HappyFox Help Desk Native Integrations | Ticketing System Integrations
+    </title>
+  </head>
+  <body onload="onload_data()">
+    <div id="top_section"></div>
+    <!-- featured apps -->
+    <div id="featured_app_section">
+      <h1>Help Desk Integration</h1>
+      <h3>
+        A happy roof that can accommodate all your favorite business apps.
+      </h3>
+      <div id="card_container">
+        <div class="card">
+          <div class="featured_container">
+            <p>FEATURED</p>
+          </div>
+          <div class="logo_details">
+            <img src="../Images/salesforce.svg" alt="salesforce" />
+            <p class="details">View details from Salesforce objects</p>
+            <button class="learn_more_btn">Learn More</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="featured_container new">
+            <p>NEW</p>
+          </div>
+          <div class="logo_details">
+            <img
+              id="msLogo"
+              src="../Images/ms_teams_full.png"
+              alt="ms_teams_full"
+            />
+            <p class="details">
+              Manage your tickets directly within Microsoft Teams
+            </p>
+            <button class="learn_more_btn">Learn More</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="featured_container">
+            <p>FEATURED</p>
+          </div>
+          <div class="logo_details">
+            <img
+              id="wp"
+              src="../Images/whatsapp-logo.png"
+              alt="whatsapp-logo"
+            />
+            <p class="details">
+              Collaborate to categorize and resolve queries from WhatsApp
+            </p>
+            <button class="learn_more_btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apps Directory -->
+    <div id="directory">
+      <h2>HappyFox Apps Directory</h2>
+      <input
+        type="text"
+        placeholder="Search for an app"
+        id="directory_search"
+      />
+      <div id="display_filter_container">
+        <ul class="filter_list">
+          <h4>FILTER BY:</h4>
+          <li onclick="filterList('All')">All Integrations</li>
+          <li onclick="filterList('Automation')">Automation</li>
+          <li onclick="filterList('Business Intelligence')">
+            Business Intelligence
+          </li>
+          <li onclick="filterList('Communication')">Communication</li>
+          <li onclick="filterList('CRM')">CRM</li>
+          <li onclick="filterList('E-Commerce')">E-Commerce</li>
+          <li onclick="filterList('Live Chat')">Live Chat</li>
+          <li onclick="filterList('Payment')">Payment</li>
+          <li onclick="filterList('Project Management')">Project Management</li>
+          <li onclick="filterList('Single Sign-on')">Single Sign-on</li>
+        </ul>
+        <div id="filter_card_container_parent">
+          <div id="filter_card_container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom section -->
+    <div id="bottom_section">
+      <div>
+        <div class="box">
+          <p>CAN’T FIND YOUR APP?</p>
+          <p>Request App Integration</p>
+          <a href="">Contact us</a>
+        </div>
+      </div>
+      <div>
+        <div class="box">
+          <p>HAVE A FEW MINUTES?</p>
+          <p>Interested in Trying HappyFox?</p>
+          <a href="">Get A Demo</a>
+        </div>
+      </div>
+    </div>
+    <footer id="foot_of_page"></footer>
+  </body>
+</html>
+<script type="module">
+  import footerSection from "../components/footer.js"
+  // document.querySelector("footer").innerHTML = footerSection();
+  document.getElementById("foot_of_page").innerHTML = footerSection();
+</script>
+<script>
+  let appDirectory = [
+    {
+      img_link: "../Images/hfc.svg",
+      title: "Add live chat to your website",
+      category: "Live Chat",
+      name: "happyfox",
+    },
+    {
+      img_link: "../Images/hf-chatbot-int.svg",
+      title: "Deflect tickets and reduce support volume",
+      category: "Automation",
+      name: "happyfox",
+    },
+    {
+      img_link: "../Images/hf-workflows-int.svg",
+      title: "Automate your Helpdesk business processes",
+      category: "Automation",
+      name: "happyfox",
+    },
+    {
+      img_link: "../Images/../Images/hf-bi-int.svg",
+      title: "Visually analyze your Helpdesk data",
+      category: "Business Intelligence",
+      name: "happyfox",
+    },
+    {
+      img_link: "../Images/slack-logo-min.png",
+      title: "Get instant ticket notifications",
+      category: "Communication",
+      name: "slack",
+    },
+    {
+      img_link: "../Images/ms_teams_full.png",
+      title: "Respond and update your tickets directly within Microsoft Teams.",
+      category: "Communication",
+      name: "microsoft",
+    },
+    {
+      img_link: "../Images/salesforce-icon.svg",
+      title: "View details from Salesforce objects in your Help Desk",
+      category: "CRM",
+      name: "salesforce",
+    },
+    {
+      img_link: "../Images/jira.svg",
+      title: "Issue tracking on your help desk",
+      category: "Project Management",
+      name: "jira",
+    },
+    {
+      img_link: "../Images/msdynamics.svg",
+      title: "Sync customer details and support tickets",
+      category: "CRM",
+      name: "microsoft",
+    },
+    {
+      img_link: "../Images/azure.svg",
+      title: "One credetntail to access all your applications.",
+      category: "Single Sign-on",
+      name: "azure",
+    },
+    {
+      img_link: "../Images/okta.svg",
+      title: "Okta SSO on your help desk",
+      category: "Single Sign-on",
+      name: "okta",
+    },
+    {
+      img_link: "../Images/azure-logo.png",
+      title: "Link HappyFox tickets to work items in Azure Boards.",
+      category: "Project Management",
+      name: "azure",
+    },
+    {
+      img_link: "../Images/zapier.svg",
+      title: "Create Zapier triggers to automate help desk tasks",
+      category: "CRM",
+      name: "zapier",
+    },
+    {
+      img_link: "../Images/pipedrive.svg",
+      title: "Auto sync customer data from Pipedrive CRM",
+      category: "CRM",
+      name: "pipedrive",
+    },
+    {
+      img_link: "../Images/sugarcrm.svg",
+      title: "View customer details from CRM in your help desk",
+      category: "CRM",
+      name: "sugarcrm",
+    },
+    {
+      img_link: "../Images/highrise.svg",
+      title: "Higher CRM Customer profiles on your help desk",
+      category: "CRM",
+      name: "highrise",
+    },
+    {
+      img_link: "../Images/magento.svg",
+      title: "Magento eCommerce information on your help desk",
+      category: "E-Commerce",
+      name: "magento",
+    },
+    {
+      img_link: "../Images/shopify.svg",
+      title: "Shopify eCommerce integration for HappyFox",
+      category: "E-Commerce",
+      name: "shopify",
+    },
+    {
+      img_link: "../Images/bigcommerce.svg",
+      title: "Bigcommerce on your HappyFox help desk",
+      category: "E-Commerce",
+      name: "bigcommerce",
+    },
+    {
+      img_link: "../Images/baremetrics.svg",
+      title: "Access revenue analytics within HappyFox",
+      category: "Payment",
+      name: "baremetrics",
+    },
+    {
+      img_link: "../Images/chargify.svg",
+      title: "Better billing support with Chargify",
+      category: "Payment",
+      name: "chargify",
+    },
+    {
+      img_link: "../Images/chartmogul.svg",
+      title: "View billing details in HappyFox",
+      category: "Payment",
+      name: "chartmogul",
+    },
+    {
+      img_link: "../Images/stripe.svg",
+      title: "Access contextual billing information",
+      category: "Payment",
+      name: "stripe",
+    },
+    {
+      img_link: "../Images/github.svg",
+      title: "Track and create issues within your helpdesk",
+      category: "Project Management",
+      name: "github",
+    },
+  ];
+  let Search_query = document.getElementById("directory_search");
+
+  let display = (data) => {
+    let filter_box = document.getElementById("filter_card_container");
+    filter_box.innerHTML = null;
+    data.forEach((el) => {
+      let card = document.createElement("div");
+      card.className = "filter_card";
+      let logo_container = document.createElement("div");
+      logo_container.className = "logo";
+
+      let image_container = document.createElement("img");
+      image_container.src = el.img_link;
+
+      let title = document.createElement("p");
+      title.innerText = el.title;
+      title.className = "text";
+
+      logo_container.append(image_container);
+      card.append(logo_container, title);
+      filter_box.append(card);
+    });
+  };
+
+  let onload_data = () => {
+    display(appDirectory);
+  };
+
+  let filterList = (query) => {
+    let allList = document.querySelectorAll("li");
+    for (let i = 0; i < allList.length; i++) {
+      allList[i].style.border = "1px solid transparent";
+    }
+    let list = event.composedPath()[0];
+    list.style.borderLeft = "2px solid rgb(241, 102, 49)";
+
+    if (query == "All") {
+      display(appDirectory);
+    } else {
+      let filtered = appDirectory.filter((el) => {
+        return el.category == query;
+      });
+      display(filtered);
+    }
+  };
+
+  let search = (e) => {
+    if (e.key === "Enter") {
+      let query = Search_query.value;
+      let foundData = appDirectory.filter((el) => {
+        return el.name == query;
+      });
+      display(foundData);
+    }
+  };
+
+  Search_query.addEventListener("keydown", search);
+</script>

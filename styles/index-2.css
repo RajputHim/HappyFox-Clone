@@ -1,0 +1,157 @@
+#software_list_container {
+  margin-top: 50px;
+  padding: 20px;
+}
+#software_grid {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+#software_grid > h3 {
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: #323643;
+}
+#software_grid > h4 {
+  color: #323643;
+  font-size: 35px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+#software_grid_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 40px;
+  margin-bottom: 75px;
+}
+.software_list {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+  line-height: 35px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: box-shadow 0.6s ease;
+}
+#for_border1 {
+  border-top: 5px solid #e2434b;
+}
+#for_border2 {
+  border-top: 5px solid #08c299;
+}
+#for_border3 {
+  border-top: 5px solid #429ffd;
+}
+#for_border4 {
+  border-top: 5px solid #ef6c35;
+}
+.software_list:hover {
+  box-shadow: none;
+}
+.icon {
+  padding-right: 14px;
+}
+.software_list h5 {
+  font-size: 21px;
+  margin-bottom: 14px;
+}
+.software_list p {
+  font-size: 18px;
+  color: #6d717e;
+}
+#demo_btn > button {
+  background-color: #d4450e;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  border: 1px solid transparent;
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: background-color 0.6s ease;
+}
+#demo_btn > button:hover {
+  background-color: #ff9e77;
+}
+
+#favourite_apps_container,
+#company_review_section {
+  margin-top: 50px;
+  padding: 20px;
+}
+#favourite_apps_grid,
+#company_review_heading {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+#favourite_apps_grid_container {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-template-rows: 150px 150px;
+  gap: 40px;
+  width: 85%;
+  margin: auto;
+}
+
+.apps_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 75px;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 5px 100px;
+  transition: box-shadow 0.7s ease;
+}
+.apps_list:hover {
+  box-shadow: none;
+}
+#favourite_apps_grid > h3,
+#company_review_heading > h3 {
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: #323643;
+}
+#favourite_apps_grid > h4,
+#company_review_heading > h4 {
+  color: #323643;
+  font-size: 35px;
+  margin-bottom: 70px;
+  font-weight: 700;
+}
+#company_review_list {
+  width: 85%;
+  margin: auto;
+}
+#review_container {
+  width: 85%;
+  height: 50vh;
+  position: relative;
+  margin: auto;
+}
+.review {
+  display: none;
+}
+.name_logo_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.name > p:first-child {
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+}
+.name > p:last-child {
+  color: #6d717e;
+}
+.logo>img{
+  width: 270px;
+  height: 120px;
+}
