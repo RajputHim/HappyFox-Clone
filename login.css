@@ -1,72 +1,58 @@
-#log {
-  width: 18%;
-  border: 1px solid;
-  text-align: center;
-  height: 340px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  background-color: aliceblue;
+ul {
+  width: 22em;
+  display: flex;
+  border: 1px solid transparent;
+  justify-content: space-evenly;
+  font-weight: 700;
 }
-#form {
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  height: 60px;
+  border: 1px solid black;
+  justify-content: right;
+  align-items: center;
+  display: flex;
+}
+#login-form-div {
+  border: 1px solid transparent;
+  width: 25%;
+  margin: 20px auto;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  margin-top: 15%;
 }
-label {
-  right: 19%;
-  position: relative;
-}
-#tick {
+form {
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 169px;
 }
-img {
-  width: 50px;
-  position: absolute;
-  top: 22.5%;
-  left: 48%;
-  z-index: 2;
+input {
+  padding: 6px 12px;
 }
-#em {
-  padding-bottom: 9px;
-  line-height: 0px;
-  width: 77%;
-}
-#pass {
-  padding-bottom: 9px;
-  line-height: 0px;
-  width: 77%;
-}
-#em > p {
-  position: relative;
-  left: -31%;
-}
-#pass > p {
-  position: relative;
-  left: -26%;
-}
-.pp {
-  position: relative;
-  top: 3%;
-}
-#bl {
-  color: rgb(0, 8, 255);
-  background-color: chartreuse;
-  cursor: pointer;
+input[type="submit"] {
+  padding: 6px;
   width: 50%;
-  border-radius: 8px;
+  background: teal;
+  color: white;
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-body{
-    background-color: #1E2022;
-}
-#tp{
-    color: white;
-    position: absolute;
-    top: 73%;
-    left: 43%;
+img{
+  position: absolute;
+  left: 48%;
+  width: 42px;
+  z-index: 1;
+  top: 3%;
 }

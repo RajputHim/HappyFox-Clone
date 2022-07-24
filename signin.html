@@ -8,38 +8,29 @@
     <link rel="stylesheet" href="./login.css" />
   </head>
   <body>
-    <p id="tp">Don’t have an account? <a href="./signup.html" style="color: white;">Sign Up</a></p>
+    <p id="tp">Don’t have an account? <a href="./signup.html">Sign Up</a></p>
     <img
       src="https://assets.happyfoxchat.com/v2/agent/images/18873ce36f62c5ace5e98f4b564cfd66.png"
     />
 
-    <div id="log">
-      <p class="pp">Login to <b>HappyFox Chat</b></p>
-      <div id="form">
-        <div id="em">
-          <p>Email</p>
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter your Email address"
-            required
-          />
-        </div>
-        <div id="pass">
-          <p>Password</p>
-          <input
-            type="password"
-            id="password"
-            placeholder="Account Password"
-            required
-          />
-        </div>
-        <div id="tick">
-          <input type="checkbox" />
-          <p>Keep me logged in for 30 days</p>
-        </div>
-        <button id="bl">Login</button>
-      </div>
+    <div id="login-form-div">
+      <h1>Login</h1>
+      <form>
+        <!--Write form input elements here-->
+        <input
+          type="email"
+          required
+          id="email"
+          placeholder="Enter Your Email"
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Your Password"
+        />
+        <input type="submit" value="Submit" />
+      </form>
     </div>
   </body>
 </html>
+<script src="./signin.js"></script>

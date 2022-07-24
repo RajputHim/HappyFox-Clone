@@ -4,53 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in</title>
+    <title>Signup</title>
     <link rel="stylesheet" href="./signup.css" />
   </head>
-  <body>
-    <p id="tp">
-      Don’t have an account?
-      <a href="./signup.html" style="color: white">Sign Up</a>
-    </p>
-    <img
-      src="https://assets.happyfoxchat.com/v2/agent/images/18873ce36f62c5ace5e98f4b564cfd66.png"
-    />
 
-    <div id="log">
-      <p class="pp">Sign Up to <b>HappyFox Chat</b></p>
-      <div id="form">
-        <div id="nm">
-          <p>Name</p>
-          <input type="text" id="name" placeholder="Enter your Name" required />
-        </div>
-        <div id="num">
-          <p>Contact Number</p>
-          <input type="number" placeholder="Contact Number" id="no" required />
-        </div>
-        <div id="em">
-          <p>Email</p>
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter your Email address"
-            required
-          />
-        </div>
-        <div id="pass">
-          <p>Password</p>
-          <input
-            type="password"
-            id="password"
-            placeholder="Account Password"
-            required
-          />
-        </div>
-        <div id="tick">
-          <input type="checkbox" />
-          <p>Keep me logged in for 30 days</p>
-        </div>
-        <button id="bl">Login</button>
-      </div>
+  <body>
+    <div id="signup-form-div">
+      <h1>Signup</h1>
+      <form>
+        <!--Write form input elements here-->
+        <input type="text" required id="name" placeholder="Enter Your Name" />
+        <input
+          type="contact"
+          required
+          id="contact"
+          placeholder="Enter Your Contact"
+        />
+        <input
+          type="email"
+          required
+          id="email"
+          placeholder="Enter Your Email"
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Your Password"
+        />
+        <input type="submit" value="Submit" />
+
+        <p><a href="./signin.html">Login here</a></p>
+      </form>
     </div>
   </body>
 </html>
+<script src="./signup.js"></script>
