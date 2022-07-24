@@ -1,84 +1,86 @@
-.navbar{
-    width: 80%;
-    margin: 0 auto;
+.navbar {
+  width: 80%;
+  margin: 0 auto;
 }
 
-#container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    width: 100%;
-    overflow: hidden;
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  overflow: hidden;
 }
 
-header{
-    background: #dbece7;
+header {
+  background: #dbece7;
 }
 
-.logo{
-    float: left;
-    padding: 10px 0;
+.logo {
+  float: left;
+  padding: 10px 0;
 }
 
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-nav li{
-    display: inline-block;
-    margin-left: 70px;
-    padding: 23px 0;
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+  padding: 23px 0;
 
-    position: relative;
+  position: relative;
 }
 
-nav a{
-    color: rgb(71, 70, 70);
-    text-decoration: none;
-    text-transform: uppercase;
+nav a {
+  color: rgb(71, 70, 70);
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-nav a:hover{
-    color: rgb(37, 36, 36);
+nav a:hover {
+  color: rgb(37, 36, 36);
 }
 
-nav a::before{
-    content: "";
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: orangered;
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: orangered;
 
-    position: absolute;
-    top: 0;
-    width: 0%;
-    
-    transition: all ease-in-out 250ms;
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
 }
 
-nav a:hover::before{
-    width: 100%;
+nav a:hover::before {
+  width: 90%;
 }
 
-#logo-img{
-    flex-direction: start;
-    height: fit-content;
+#logo-img {
+  flex-direction: start;
+  height: fit-content;
 }
 
-#nav-disp{
-    display: flex;
+#nav-disp {
+  display: flex;
 }
-ul>ul{
-    display: flex;
-    margin-left: 70%;
+ul > ul {
+  display: flex;
+  margin-left: 70%;
 }
 
-#login{
-    background-color: tomato;
-    position: relative;
-    left: 450px;
-    top: 22px;
-    border: 0px;
+#login {
+  background-color: transparent;
+  position: relative;
+  left: 300px;
+  top: 22px;
+  border: 0px;
+  padding: 5px;
+  cursor: pointer;
 }

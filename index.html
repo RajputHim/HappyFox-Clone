@@ -21,9 +21,10 @@
                       <li><a href = ".//Demo/demo.html">Demo</a></li>
                       <li><a href = "./happt fox clone/Pricing/index.html">Pricing</a></li>
                       <li><a href = "./helpdeskpg.html">Helpdesk</a></li>
+                      <li><a href = "./Helpdesk integration/helpdesk-integration.html">Helpdesk Integration</a></li>
                   </ul>
                   <ul>
-                      <button id = "login" type = "button"><a href="#"></a>Login</button>
+                      <button id = "login" type = "button"><a href="signin.html">Login</a></button>
                   </ul>
               </div>
           </nav>
@@ -43,7 +44,7 @@
                 id="email_input"
                 placeholder="Enter your work email"
               />
-              <button id="submit_email">GET A DEMO</button>
+              <button onclick="goToDemo()" id="submit_email">GET A DEMO</button>
             </div>
             <p id="terms">
               <a href=""></a>
@@ -231,8 +232,8 @@
           </div>
         </div>
         <div id="roi_btn">
-          <button>View all features</button>
-          <button>Get a Demo</button>
+          <button onclick="goTotour()">View all features</button>
+          <button onclick="goToDemo()">Get a Demo</button>
         </div>
       </div>
     </div>
@@ -316,7 +317,7 @@
           </div>
         </div>
         <div id="demo_btn">
-          <button>Get a Demo</button>
+          <button onclick="goToDemo()">Get a Demo</button>
         </div>
       </div>
     </div>
@@ -360,7 +361,7 @@
         <div id="sectionThree_customer_support">
           <div id="stories_button">
             <button onclick="goToIntegration()">View all integrations</button>
-            <button>Get a Demo</button>
+            <button onclick="goToDemo()">Get a Demo</button>
           </div>
         </div>
       </div>
@@ -516,6 +517,11 @@
   // link to demo page
   let goToDemo=()=>{
     window.location.href="./Demo/demo.html";
+  }
+
+  // link to tour page
+  let goTotour=()=>{
+    window.location.href="./tour.html"
   }
 </script>
 

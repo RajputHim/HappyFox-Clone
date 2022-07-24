@@ -10,7 +10,7 @@
 #top {
   width: 100%;
   height: 400px;
-
+margin-top: -100px;
   color: white;
   text-align: center;
 }
@@ -127,7 +127,12 @@ input {
   font-size: larger;
   border-radius: 8px;
 }
-button {
+#login{
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+#btn2 {
   padding: 19px;
   border-radius: 8px;
   margin-left: -20px;
