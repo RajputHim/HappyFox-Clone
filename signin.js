@@ -11,7 +11,13 @@ function checkData(event) {
     flag: false,
   };
   if (checkStatus(data.email, data.password) == true) {
-    localStorage.setItem("signin", JSON.stringify(data));
+    let x=userData.filter((el)=>{
+         if(el.email===data.email){
+            return el;
+         }
+    })
+    localStorage.setItem("signin", JSON.stringify(x));
+    
     alert("Sign in succussfully");
     alert("Welcome to home page")
     setTimeout(function () {
