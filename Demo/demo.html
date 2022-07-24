@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo page</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="demo.css" />
     <style type="text/css">
       footer {
         padding: 0;
@@ -119,19 +119,19 @@
         <div id="h2">
           <h2>See HappyFox in Action</h2>
         </div>
-        <form action="/action_page.php">
-          <input type="text" class="input" placeholder=" Your Name" />
+        <form >
+          <input type="text" class="input" id="name" placeholder=" Your Name" />
 
-          <input type="text" class="input" placeholder="Work Mail" />
+          <input type="text" class="input" id="email" placeholder="Work Mail" />
 
-          <input type="number" class="input" placeholder="Phone" />
+          <input type="number" class="input" id="phone" placeholder="Phone" />
 
-          <input type="Company Name" class="input" placeholder="Company Name" />
+          <input type="Company Name" class="input" id="company" placeholder="Company Name" />
 
           <!-- <select id="company size" placeholder="Company Size" class="input"  name="Company Size"><br><br> -->
           <select
             name="company size"
-            id="Company Size"
+            id="CompanySize"
             class="input"
             placeholder="Company Size"
           >
@@ -201,7 +201,7 @@
           <label for="Agent Count"></label>
           <select
             name="Agent Count"
-            id="Agent Count"
+            id="AgentCount"
             class="input"
             placeholder="Agent Count"
           >
@@ -217,7 +217,7 @@
           <label for="Your Territory"></label>
           <select
             name="Your Territory"
-            id="Your Territory"
+            id="YourTerritory"
             class="input"
             placeholder="Your Territory"
           >
@@ -233,8 +233,8 @@
             <option value="Asia Pacific">Asia Pacific</option>
           </select>
         </form>
-        <div class="red_box">
-          <a> <h5>GET A DEMO NOW</h5></a>
+        <div >
+          <button class="demo-btn" onclick="submit()">GET A DEMO NOW</button>
         </div>
         <div class="condition">
           <span>By submiting this form you agree to our Privacy Policy</span>
@@ -308,3 +308,4 @@
     </footer>
   </body>
 </html>
+<script src="demo.js"></script>
