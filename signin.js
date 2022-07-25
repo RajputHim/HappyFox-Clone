@@ -19,7 +19,6 @@ function checkData(event) {
     localStorage.setItem("signin", JSON.stringify(x));
     
     alert("Sign in succussfully");
-    alert("Welcome to home page")
     setTimeout(function () {
       window.location.replace("index.html")
     }, 2000);

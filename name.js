@@ -6,11 +6,16 @@ document.getElementById("login").innerText=`Hi ${data[0].name}`
 document.getElementById("login").style.fontWeight="bold"
 document.getElementById("login").addEventListener("click",()=>{
     document.getElementById("login").innerText="Sign in"
-    alert("For SignOut click Ok")
-    setTimeout(()=>{
-        window.location.replace("signin.html")
-    },2000)
-    alert("Redirecting to Login Page")
+    let txt;
+    if(confirm("You want to sign out ?")){
+        txt="Ok";
+            window.location.replace("signin.html")
+    }else{
+        txt="Cancel"
+        document.getElementById("login").innerText=`Hi ${data[0].name}`
+    }
+
+    
 })
 
 
