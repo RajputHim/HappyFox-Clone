@@ -10,7 +10,7 @@ We are the team of 5 members who worked together to create the clone of HappyFox
 - JavaScript
 
 Live site link 
-[HappyFox Clone](https://chimerical-pegasus-840576.netlify.app/)
+[HappyFox Clone](https://inspiring-sprinkles-7ae76a.netlify.app/)
 
 ![Screenshot (47)](https://user-images.githubusercontent.com/105914405/195310897-76bca200-ebf7-40a4-81a5-af3b1f64494c.png)
 ![Screenshot (48)](https://user-images.githubusercontent.com/105914405/195311058-46893b58-7270-4c16-b112-76f71724a556.png)
